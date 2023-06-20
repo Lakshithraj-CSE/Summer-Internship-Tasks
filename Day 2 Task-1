@@ -1,0 +1,194 @@
+db.sececollection.insert({name:"Audi"},{model:"A"},{rented_user_count:1},{mileage:20},{transmission:"Automatic"},{rent:1500},{fuel:"Diesel"});
+DeprecationWarning: Collection.insert() is deprecated. Use insertOne, insertMany, or bulkWrite.
+{
+  acknowledged: true,
+  insertedIds: {
+    '0': ObjectId("6491a9c272cdc31aa6ba9cea")
+  }
+}
+db.sececollection.insertOne({name:"Audi"},{model:"A"},{rented_user_count:1},{mileage:20},{transmission:"Automatic"},{rent:1500},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491a9dd72cdc31aa6ba9ceb")
+}
+db.sececollection.insertOne({name:"Audi A2"},{model:"A"},{rented_user_count:2},{mileage:20},{transmission:"Automatic"},{rent:1550},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa0072cdc31aa6ba9cec")
+}
+db.sececollection.insertOne({name:"Audi A3"},{model:"A"},{rented_user_count:3},{mileage:24},{transmission:"Automatic"},{rent:1600},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa1972cdc31aa6ba9ced")
+}
+db.sececollection.insertOne({name:"Audi A4"},{model:"A+"},{rented_user_count:4},{mileage:25},{transmission:"Automatic"},{rent:1700},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa3372cdc31aa6ba9cee")
+}
+db.sececollection.insertOne({name:"Audi A5"},{model:"A+"},{rented_user_count:5},{mileage:27},{transmission:"Automatic"},{rent:1750},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa4672cdc31aa6ba9cef")
+}
+db.sececollection.insertOne({name:"Audi Q3"},{model:"A+"},{rented_user_count:6},{mileage:27},{transmission:"Automatic"},{rent:1800},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa6c72cdc31aa6ba9cf0")
+}
+db.sececollection.insertOne({name:"Audi Q4"},{model:"A+"},{rented_user_count:7},{mileage:30},{transmission:"Automatic"},{rent:1900},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa8072cdc31aa6ba9cf1")
+}
+db.sececollection.insertOne({name:"Audi Q8"},{model:"A"},{rented_user_count:8},{mileage:26},{transmission:"Automatic"},{rent:1700},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aa9c72cdc31aa6ba9cf2")
+}
+db.sececollection.insertOne({name:"Audi Q11"},{model:"A+"},{rented_user_count:9},{mileage:32},{transmission:"Automatic"},{rent:2000},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aab572cdc31aa6ba9cf3")
+}
+db.sececollection.insertOne({name:"Audi zodiac"},{model:"A+"},{rented_user_count:10},{mileage:32},{transmission:"Automatic"},{rent:2100},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aad772cdc31aa6ba9cf4")
+}
+db.sececollection.insertOne({name:"BMW M2"},{model:"C"},{rented_user_count:11},{mileage:23},{transmission:"Automatic"},{rent:1600},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aaf872cdc31aa6ba9cf5")
+}
+db.sececollection.insertOne({name:"BMW M4"},{model:"B"},{rented_user_count:12},{mileage:24},{transmission:"Automatic"},{rent:1650},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491ab1272cdc31aa6ba9cf6")
+}
+db.sececollection.insertOne({name:"BMW M6"},{model:"B+"},{rented_user_count:13},{mileage:24},{transmission:"Automatic"},{rent:1700},{fuel:"Petrol"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491ab2772cdc31aa6ba9cf7")
+}
+db.sececollection.insertOne({name:"BMW M7"},{model:"A"},{rented_user_count:14},{mileage:24},{transmission:"Automatic"},{rent:1800},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491ab6072cdc31aa6ba9cf8")
+}
+db.sececollection.insertOne({name:"BMW M9"},{model:"A"},{rented_user_count:15},{mileage:25},{transmission:"Automatic"},{rent:1850},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491ab8a72cdc31aa6ba9cf9")
+}
+db.sececollection.insertOne({name:"BMW M11"},{model:"A+"},{rented_user_count:16},{mileage:35},{transmission:"Automatic"},{rent:2100},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491aba072cdc31aa6ba9cfa")
+}
+db.sececollection.insertOne({name:"Ford Mustang"},{model:"A+"},{rented_user_count:17},{mileage:35},{transmission:"Automatic"},{rent:2200},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491abb872cdc31aa6ba9cfb")
+}
+db.sececollection.insertOne({name:"Nissan Gt"},{model:"A+"},{rented_user_count:18},{mileage:35},{transmission:"Automatic"},{rent:2250},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491abd272cdc31aa6ba9cfc")
+}
+db.sececollection.insertOne({name:"Bugatti Veyron"},{model:"A+"},{rented_user_count:19},{mileage:35},{transmission:"Automatic"},{rent:2300},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491abee72cdc31aa6ba9cfd")
+}
+db.sececollection.insertOne({name:"Ferrari"},{model:"A"},{rented_user_count:20},{mileage:35},{transmission:"Automatic"},{rent:2300},{fuel:"Diesel"});
+{
+  acknowledged: true,
+  insertedId: ObjectId("6491ac0672cdc31aa6ba9cfe")
+}
+db.sececollection.updateOne({name:"Audi"},{$set:{fuel:"Petrol"}});
+{
+  acknowledged: true,
+  insertedId: null,
+  matchedCount: 1,
+  modifiedCount: 1,
+  upsertedCount: 0
+}
+db.sececollection.find()
+{
+  _id: ObjectId("6491a9c272cdc31aa6ba9cea"),
+  name: 'Audi',
+  fuel: 'Petrol'
+}
+{
+  _id: ObjectId("6491a9dd72cdc31aa6ba9ceb"),
+  name: 'Audi'
+}
+{
+  _id: ObjectId("6491aa0072cdc31aa6ba9cec"),
+  name: 'Audi A2'
+}
+{
+  _id: ObjectId("6491aa1972cdc31aa6ba9ced"),
+  name: 'Audi A3'
+}
+{
+  _id: ObjectId("6491aa3372cdc31aa6ba9cee"),
+  name: 'Audi A4'
+}
+{
+  _id: ObjectId("6491aa4672cdc31aa6ba9cef"),
+  name: 'Audi A5'
+}
+{
+  _id: ObjectId("6491aa6c72cdc31aa6ba9cf0"),
+  name: 'Audi Q3'
+}
+{
+  _id: ObjectId("6491aa8072cdc31aa6ba9cf1"),
+  name: 'Audi Q4'
+}
+{
+  _id: ObjectId("6491aa9c72cdc31aa6ba9cf2"),
+  name: 'Audi Q8'
+}
+{
+  _id: ObjectId("6491aab572cdc31aa6ba9cf3"),
+  name: 'Audi Q11'
+}
+{
+  _id: ObjectId("6491aad772cdc31aa6ba9cf4"),
+  name: 'Audi zodiac'
+}
+{
+  _id: ObjectId("6491aaf872cdc31aa6ba9cf5"),
+  name: 'BMW M2'
+}
+{
+  _id: ObjectId("6491ab1272cdc31aa6ba9cf6"),
+  name: 'BMW M4'
+}
+{
+  _id: ObjectId("6491ab2772cdc31aa6ba9cf7"),
+  name: 'BMW M6'
+}
+{
+  _id: ObjectId("6491ab6072cdc31aa6ba9cf8"),
+  name: 'BMW M7'
+}
+{
+  _id: ObjectId("6491ab8a72cdc31aa6ba9cf9"),
+  name: 'BMW M9'
+}
+{
+  _id: ObjectId("6491aba072cdc31aa6ba9cfa"),
+  name: 'BMW M11'
+}
+{
+  _id: ObjectId("6491abb872cdc31aa6ba9cfb"),
+  name: 'Ford Mustang'
+}
+{
+  _id: ObjectId("6491abd272cdc31aa6ba9cfc"),
+  name: 'Nissan Gt'
+}
