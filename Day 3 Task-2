@@ -1,0 +1,57 @@
+let str2 ="im studying at sece";
+  // to remove spaces
+  console.log(str2.trim());
+  //replace first occurence
+  console.log(str2.replace('e','o'));
+  console.log(str2.replaceAll('e','o'));
+
+ // array
+  let arr = [
+    1,
+    undefined,
+    true,
+    null,
+    '123',
+    '4',
+    [6.25,2,3,4,5],
+    (num1)=> num1*5,
+     {a:1,b:2,say_hello:()=>"hello"}
+    ];
+  arr.push(10);
+ console.log(arr[8][3]);
+
+ for(key in arr [8])
+ {
+    console.log(key,arr[8][key]);
+ }
+
+ let arr5=[1,2,3,4,5];
+ arr5.push(6,7,8,9,10);
+ console.log(arr5);
+
+ console.log(arr5.unshift(1,2,3));
+ console.log(arr5);
+
+ //let names=["lokesh","dharmik","prasad","kabi","mythreyan"];
+ //let name_sliced=names.slice(1,4);      //slice(non destructive)
+ //console.log(name_sliced);
+
+ //names.splice(2,2,1,2,3);        //splice(destructive)
+ //console.log(names);
+
+ //names.splice(5,1,"laky","kiruba");
+ //console.log(names);
+
+ //let b1="harish";
+ //console.log(b1.slice(1,6));
+ //let str6 = "sri eshwar college";
+ //let str7 = str6.split(" ");
+ //console.log(str7);
+ //console.log(str7.join(" "));
+
+ //let str8="sri eshwar college";
+ //let str9=str8.toUpperCase();
+ //console.log(str9);
+ //console.log(str9.toLowerCase());
+
+ 
