@@ -1,0 +1,132 @@
+//palindrome function
+let str12="malayalam";
+let pal=str12.split('');
+pal.reverse();
+let ans5=pal.join('');
+if(str12== ans5)
+ console.log(true);
+
+ //array callback methods
+ //let obj8={
+    //a:1,
+    //b:2,
+   // c:3
+ //}
+ //for(let key in obj8)   //for in (for array index is output)(mostly for objects)
+ //{
+   // console.log(key);
+ //}
+
+ //for(let key of obj8)   //for of (for array values is output)(mostly for arrays)
+ //{
+   // console.log(key);
+ //}
+
+ let sece_names=["laky","prasad","dharmik","kabi"];
+ let num_arr=[1,2,3,4,5];
+ num_arr.forEach((ele)=>{
+    console.log(ele*ele);
+ })
+//arrow function (1 argument bracket optional)(0 or more than 1 bracket must)
+
+//mapping
+let arr14=sece_names.map(ele => ele.repeat(3));
+console.log(arr14);
+
+//filter
+let ans_filter=num_arr.filter(ele =>{
+    return (ele%2);
+})
+console.log(ans_filter);
+
+let names_obj=[
+    {
+    names:"lakshith",
+    dob:2002
+    },
+    {
+    names:"ajay",
+    dob:2003 
+    },
+    {
+     names:"bala",
+     dob:2004  
+    },
+    {
+     names:"surya",
+     dob:2004   
+    }
+];
+
+
+ let ans_names =names_obj.filter(ele => ele.dob>=2003);
+ let names_final=ans_names.map(ele=>ele.names);
+ console.log(names_final);
+   
+//shallow copy(dangerous),deep copy
+const array1=[1,2,3,4,5];
+const array2=[...array1];   ///split for deep copy
+array1[2]=200;
+console.log(array2,array1);
+
+//shallow copy both array will affect
+//deep copy only new array will change
+
+const obj_copy1={
+    name:"lakshith",
+    year:"2003",
+    name:"laky"
+};
+console.log(obj_copy1);
+
+//task
+let names_obj1=[
+    {
+    names:"lakshith",
+    age:20,
+    salary:50000,
+    phn_nuumbr:8946034300
+    },
+    {
+    names:"dharmik",
+    age:20,
+    salary:25001,
+    phn_numbr:8775634675 
+    },
+    {
+     names:"prasad",
+     age:22,
+     salary:22000,
+     phn_numbr:7653688902  
+    },
+    {
+     names:"kabi",
+     age:26,
+     salary:15000,
+     phn_numbr:7092124886   
+    }
+];
+let ans_employee =names_obj1.filter(ele => ele.salary>=25000);
+let emp_details=ans_employee.map(ele=>{
+   return{ name:ele.names,age:ele.age};
+});
+console.log(emp_details);
+
+//de-structuring --> unpacking elements
+
+let arr_nums=[10,20,30,40,50,60,70,80,90,100];
+//let [aa,bb,cc,dd,...ee]=arr_nums;  //rest operator
+
+let [aa,bb, ,cc,dd,...ee]=arr_nums; 
+//console.log(aa,bb,cc,dd,ee);
+
+//de-structuring object elements
+let obj_1={
+    clg_name:"sece",
+    year:"2024",
+    city:"cbe",
+    dept:"cse",
+    lpa:"50lpa"
+};
+let {clg_name:college,year,city,...rest}=obj_1   //rename operator
+console.log(college,year,city,rest);
