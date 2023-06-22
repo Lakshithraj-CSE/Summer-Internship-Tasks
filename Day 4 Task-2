@@ -1,0 +1,35 @@
+
+setTimeout(() => console.log('Lakshith'), 3000)   //asynchronous call
+setInterval(() => console.log('Lakshith'), 3000)
+
+//promise
+//state = pending , resolve , reject
+
+
+//'https://jsonplaceholder.typicode.com/todos/1'    ==> fake api code
+
+
+//api call ilustration
+const promisex = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+        resolve('resolved')
+    },4000)
+})
+
+promisex
+.then((value)=>console.log(value))
+.catch(()=> console.log('error'));
+
+//api call
+const abc2=fetch('https://jsonplaceholder.typicode.com/todos/1');
+abc2
+.then((response)=>response.json())
+.then((data)=> console.log(data[0]))
+.catch((error)=> {console.log('error',error)});
+
+const apiCall = async()=>{
+    const promise_from_api= await fetch('https://jsonplaceholder.typicode.com/todos/1');
+    const data =  await promise_from_api.json();
+    console.log(data);
+}
+apiCall();
