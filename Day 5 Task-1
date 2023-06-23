@@ -1,0 +1,50 @@
+const USER_DATA =[
+    {
+        id:1,
+        name:"dharmik",
+        age:35,
+        email:"dharmik99@gmail.com"
+    }
+];
+
+//crud
+export const adduser = (new_user)=>{
+  USER_DATA.push(new_user)
+};  
+export const edituser = (id,key,value)=>{
+
+     const user_index=USER_DATA.findIndex((user)=>user.id==id);
+     if(user_index != -1)
+     {
+        USER_DATA[user_index][key]=value;
+     }
+};
+export const editMultipleParamInUser = (id=1,updatevalue={
+                                              name:"raj",
+                                              age:26
+                                            })=>{
+                                                const user_index=USER_DATA.findIndex((user)=>user.id==id);
+                                                if(user_index != -1)
+                                                {
+                                                   USER_DATA[user_index]={
+                                                    ...USER_DATA[user_index],
+                                                    ...updateValue
+                                                   }
+                                                }                  
+                                            };
+
+export const deleteuser = (id)=> {
+    
+    for(index in USER_DATA){
+        if(USER_DATA[index].id == id)
+        {
+            USER_DATA.splice(index,1)
+        }
+    }
+};
+
+adduser({id:2,age:20,name:'chandra',emai:'a@gmail.com'})
+edituser(1,'age',34)
+deleteuser(1)
+console.log(USER_DATA);
+;
