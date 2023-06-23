@@ -1,0 +1,39 @@
+//DOM-Document Object Model
+
+//document.body.innerHTML='hello';
+//document.body.innerHTML='<div>hello</div>';
+document.body.style.backgroundColor='lavender';
+//document.body.style.Color='red';
+console.log(document.body.children);
+const allChild = document.body.children;
+//allChild[1].style.color="green";
+
+//setTimeout(() => console.log(allChild[0].style.color="red"), 4000)
+//setTimeout(() => console.log(allChild[0].style.color="green"), 2000)
+//setTimeout(() => console.log(allChild[0].style.color="purple"), 6000)
+
+//setTimeout(() => console.log(allChild[0].innerHTML="<div>RED</div>"), 6000)
+//setTimeout(() => console.log(allChild[1].innerHTML="<div>GREEN</div>"), 3000)
+//setTimeout(() => console.log(allChild[2].innerHTML="<div>PURPLE</div>"), 9000)
+
+setInterval(() => console.log(allChild[0].style.color="red"), 2000)
+setInterval(() => console.log(allChild[0].style.color="purple"), 4000)
+//setInterval(() => console.log(allChild[0].innerHTML="<div>GREEN</div>"), 2000)
+
+//const tag=document.getElementsByClassName('cse');
+//tag[0].innerText='fankrebgshkbk';
+//console.log(tag);
+//const id=document.getElementById('unique');
+//id.innerText='id based selection';
+
+const button=document.getElementById('login-button');
+const username=document.getElementById('user');
+const password=document.getElementById('pass');
+const from =document.getElementById('login');
+button.addEventListener('click',(event)=>{
+    console.log('click');
+})
+from.addEventListener('submit',(event)=>{
+    event.preventDefault();
+    console.log('submit',username.value,password.value);
+})
