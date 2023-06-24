@@ -1,0 +1,75 @@
+// /*console.log('hello world');
+// //let a= "10";
+// //let b= "20";
+// //let c=a+b;
+// //console.log("addition of two numbers",a ,"and", b ,"=",c);
+// //console.log(process.argv[1]);
+
+// function add(a,b){
+//     return a+b;
+// }
+// function sub(a,b){
+//     return a-b;
+// }
+// function mul(a,b){
+//     return a*b;
+// }
+// function div(a,b){
+//     return a/b;
+// }
+// module.exports={add,sub,mul,div};*/
+
+ const fs= require('fs');
+// //console.log(fs);
+ fs.readFile(`${__dirname}/states.txt`,(err,data)=>{
+    if(err){
+       console.log("error❤");
+     }
+     else{
+         console.log(data.toString());
+
+
+         const inputData='Naaa Ready Tha Varava,Annan Naa Erangi Varava';
+         fs.writeFile(`${__dirname}/file1.txt`,inputData,(err)=>{
+        if(err){
+        console.log("error 💕");
+        }
+        else{
+        console.log("done write function");
+        }
+        })
+
+
+     }
+ })
+
+// const name='Lakshith';
+// //console.log(`Hello ${name} ! How are you?`);
+// console.log(__dirname+ " states.txt");
+
+
+
+console.log("hello world");
+
+
+
+
+
+
+
+/*console.log('hello world');
+const{add,sub,mul,div}=require('./app');
+//console.log(add(1,2));
+let num1=process.argv[2];
+let num2=process.argv[3];
+let n=process.argv[4];
+switch(n){
+    case '+':
+        return(add(num1,num2));
+    case '-':
+        return(sub(num1,num2));
+    case '*':
+        return(mul(num1,num2));   
+    case '/':
+        return(div(num1,num2));     
+};*/
